@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Fira+Sans:wght@300;400&family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fira Sans";
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Containers  */
+.container-fluid {
+  padding: 0;
+}
+
+/* Nav Bar  */
+.navbar {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* div with images  */
+.image-div {
+  /* width: 100%; */
+  height: 60rem;
+  color: white;
+}
+
+/* Headings  */
+.big-heading {
+  font-family: "Cardo", serif;
+  font-size: 7.5rem;
+  letter-spacing: 3rem;
+}
+
+.sub-heading {
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  padding: 12rem 27rem 0 0;
+}
+
+/* Title Section  */
+#title-nav .image-div {
+  background: url("../images/title_image.png") center/cover no-repeat;
+  position: relative;
+}
+
+#title-nav .image-div div {
+  position: absolute;
+  top: 9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Features Section  */
+.feature {
+  padding: 8%;
+  text-align: center;
+}
+
+.feature img {
+  height: 16rem;
+  padding-bottom: 2rem;
+}
+
+/* Call to Action Section  */
+#cta .image-div {
+  background: url("../images/contactus.png") center/cover no-repeat;
+  text-align: right;
+}
+
+address {
+  padding: 25rem 25rem 0 0;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+address h3 {
+  font-family: "Cardo", serif;
+  font-size: 3rem;
+}
+
+address a {
+  color: aqua;
+  text-decoration: none;
+}
+
+address a:hover {
+  color: deepskyblue;
+}
+
+/* Making Responsive  */
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+  /* Headings  */
+  .big-heading {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  .sub-heading {
+    padding: 10rem;
+    letter-spacing: 0.1rem;
+  }
+
+  /* Title section  */
+  #title-nav .image-div {
+    text-align: center;
+  }
+
+  /* Call to Action  */
+  address {
+    padding: 25rem 15rem 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  /* Headings  */
+  .big-heading {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  .sub-heading {
+    padding: 10rem;
+    letter-spacing: 0.1rem;
+  }
+
+  /* Title section  */
+  #title-nav .image-div {
+    text-align: center;
+  }
+
+  /* Call to Action  */
+  #cta .image-div {
+    text-align: center;
+  }
+
+  address {
+    padding: 25rem 0 0 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
